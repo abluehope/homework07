@@ -1,0 +1,551 @@
+.slick-track,
+.slick-list {
+  /* 슬라이드 깜빡임 해결 */
+  transition-delay: 30ms;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.sec {
+  padding: 100px 0;
+}
+
+.tit {
+  margin: 0 auto 60px auto;
+}
+
+.tit h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.tit p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.wrap {
+}
+
+.header {
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header .logo {
+  display: block;
+  width: 180px;
+}
+
+.header .gnb > ul {
+  display: flex;
+  gap: 40px;
+}
+
+.header .gnb > ul > li {
+  line-height: 100px;
+}
+
+.main_visual {
+  position: relative;
+}
+
+.main_visual .slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+
+  width: 100%;
+  padding: 0 15px;
+}
+
+.main_visual h2 {
+  margin: 0 0 30px 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 3px #000;
+}
+
+.main_visual h2 span {
+  display: block;
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.main_visual h2 strong {
+  display: block;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.main_visual p {
+  max-width: 400px;
+  margin: 0 auto;
+  text-shadow: 0 0 3px #000;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.main_visual .main_slide .main_slide_pp {
+  position: relative;
+  height: 75vh;
+  /* height: calc(100vh - 101px); */
+  background: url(../images/main_visual01.png) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .main_slide_pp::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.main_visual .main_slide .main_slide_lg {
+  position: relative;
+  height: 75vh;
+  /* height: calc(100vh - 101px); */
+  background: url(../images/main_visual02.png) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .main_slide_lg::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.main_visual .main_slide .main_slide_golf_winter {
+  position: relative;
+  height: 75vh;
+  /* height: calc(100vh - 101px); */
+  background: url(../images/main_visual03.png) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .main_slide_golf_winter::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.main_visual .main_slide .main_slide_golf {
+  position: relative;
+  height: 75vh;
+  /* height: calc(100vh - 101px); */
+  background: url(../images/main_visual04.png) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .main_slide_golf::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.main_visual .main_slide .main_slide_sunflower {
+  position: relative;
+  height: 75vh;
+  /* height: calc(100vh - 101px); */
+  background: url(../images/main_visual05.png) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .main_slide_sunflower::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.main_visual .arrows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 15px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_visual .arrows i {
+  padding: 10px;
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* SECTION 01 */
+
+.main_special_offers {
+  position: relative;
+}
+
+.main_special_offers figure {
+  margin: 0 15px;
+  border: 1px solid #ddd;
+  /* border-radius: 20px 20px 0 0; */
+  overflow: hidden;
+}
+
+.main_special_offers figure:not(.slick-current) {
+  margin-top: 100px;
+  filter: grayscale(1);
+}
+
+.main_special_offers figcaption {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+}
+
+.main_special_offers figure.slick-current figcaption {
+  padding: 25px;
+  height: 200px;
+}
+
+.main_special_offers figcaption strong {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #437535;
+}
+
+.main_special_offers figcaption p {
+  font-size: 15px;
+}
+
+.main_special_offers figcaption a {
+  margin: auto 0 0 0;
+  border: 1px solid #ddd;
+  padding: 10px 25px;
+  align-self: flex-start;
+}
+
+.main_special_offers .arrows {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1400px;
+  width: 100%;
+}
+
+.main_special_offers .arrows i {
+  font-size: 30px;
+  color: #000;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.main_special_offers .arrows .left {
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+.main_special_offers .arrows .right {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+/* SECTION 02 */
+
+.main_golf_course .content {
+  display: flex;
+  gap: 1px;
+}
+
+.main_golf_course .content > * {
+  position: relative;
+  flex: 1;
+  padding: 50px 30px;
+  height: 500px;
+
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.main_golf_course .content > *:hover {
+  flex: 3;
+}
+
+.main_golf_course .content > *::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+}
+
+.main_golf_course .content > *:hover::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.main_golf_course .content .itm01 {
+  background: url(../images/main_course_01.jpg) no-repeat center center/cover;
+}
+
+.main_golf_course .content .itm02 {
+  background: url(../images/main_course_02.jpg) no-repeat center center/cover;
+}
+
+.main_golf_course .content .itm03 {
+  background: url(../images/main_course_03.jpg) no-repeat center center/cover;
+}
+
+.main_golf_course .txt {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.main_golf_course .txt .left strong {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.main_golf_course .txt .right {
+  width: 150px;
+}
+
+.main_golf_course .txt .right strong {
+  display: block;
+}
+
+/* .main_golf_course .content > * .txt strong {
+  opacity: 0;
+}
+
+.main_golf_course .content > *:hover .txt strong {
+  opacity: 1;
+}
+
+.main_golf_course .content > * .txt span {
+  opacity: 0;
+}
+
+.main_golf_course .content > *:hover .txt span {
+  opacity: 1;
+} */
+* {
+  outline: 1px solid --tomato;
+}
+.main_golf_course .content .txt a {
+  display: block;
+  margin: auto 0 0 0;
+  background: #444;
+  padding: 10px 25px;
+  /* 스트레치 없애기 */
+  align-self: flex-start;
+}
+
+/* footer */
+
+.footer {
+  padding: 40px 0;
+  background: #444;
+  color: #f9f9f9;
+}
+
+.footer .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1200px;
+  font-style: normal;
+
+  font-size: 15px;
+}
+
+.footer .tab {
+  display: flex;
+  gap: 30px;
+}
+
+.footer .footer_customer ul > li {
+  position: relative;
+}
+
+.footer .footer_customer ul > li ~ li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -15px;
+  width: 1px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  background: #ddd;
+}
+
+.footer .footer_address ul > li {
+  position: relative;
+}
+
+.footer .footer_address ul > li ~ li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -15px;
+  width: 1px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  background: #ddd;
+}
+
+.footer .sns {
+  gap: 4px;
+}
+
+.footer .sns i {
+  padding: 5px;
+  font-size: 20px;
+  background: #222;
+}
+
+.footer .inner .footer_customer {
+  margin: 0 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .inner .footer_customer span {
+  font-weight: bold;
+}
+
+.footer .footer_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .inner .footer_address {
+  margin: 0 0 10px 0;
+}
+
+.footer .inner .footer_address .tab {
+  font-size: 13px;
+}
+
+.family_link {
+  position: relative;
+}
+
+.family_link span {
+  display: block;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+  width: 200px;
+  line-height: 29px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.family_link span i {
+  float: right;
+  line-height: 29px;
+  transition: 0.5s;
+}
+
+.family_link span.on i {
+  transform: rotate(180deg);
+}
+
+.family_link .fl ul {
+  position: absolute;
+  bottom: 29px;
+  left: 0;
+
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+  width: 200px;
+  line-height: 29px;
+
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.family_link .fl ul.on {
+  display: flex;
+}
+
+.family_link .fl ul a {
+  display: block;
+  padding: 0 15px;
+}
+
+.family_link .fl ul li {
+  font-size: 13px;
+}
+
+.family_link .fl ul li:hover {
+  background: #ddd;
+}
+
+.family_link .fl ul li ~ li {
+  border-top: 1px solid #ddd;
+}
+
+.footer .footer_call {
+  margin: 0 0 20px 0;
+  font-size: 13px;
+}
+
+.footer .footer_call .tab {
+  gap: 10px;
+}
+
+.footer .footer_call span {
+  font-size: 20px;
+}
+
+.footer .footer_copyright {
+  font-size: 13px;
+}
+
+.to_top {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  z-index: 999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.to_top.on {
+  bottom: 5%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.to_top i {
+  color: #fff;
+  background: #437535;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
