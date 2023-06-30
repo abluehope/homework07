@@ -34,6 +34,26 @@
 .wrap {
 }
 
+.user_area {
+  border-bottom: 1px solid #ddd;
+}
+
+.user_area ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.user_area ul li {
+  line-height: 24px;
+  border-right: 1px solid #ddd;
+}
+
+.user_area ul li a {
+  padding: 0 10px;
+  font-size: 13px;
+}
+
 .header {
   border-bottom: 1px solid #f9f9f9;
 }
