@@ -2,6 +2,9 @@ $(function () {
   $(".main_slide").slick({
     autoplay: true,
     arrows: false,
+    autoplaySpeed: 6000,
+    speed: 1000,
+    pauseOnHover: false,
   });
 
   $(".main_visual .arrows .left").on("click", function () {

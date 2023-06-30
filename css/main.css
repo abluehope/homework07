@@ -106,7 +106,6 @@
 .main_visual .main_slide .main_slide_pp {
   position: relative;
   height: 75vh;
-  /* height: calc(100vh - 101px); */
   background: url(../images/main_visual01.png) no-repeat center center/cover;
 }
 
@@ -120,7 +119,6 @@
 .main_visual .main_slide .main_slide_lg {
   position: relative;
   height: 75vh;
-  /* height: calc(100vh - 101px); */
   background: url(../images/main_visual02.png) no-repeat center center/cover;
 }
 
@@ -134,7 +132,6 @@
 .main_visual .main_slide .main_slide_golf_winter {
   position: relative;
   height: 75vh;
-  /* height: calc(100vh - 101px); */
   background: url(../images/main_visual03.png) no-repeat center center/cover;
 }
 
@@ -148,7 +145,6 @@
 .main_visual .main_slide .main_slide_golf {
   position: relative;
   height: 75vh;
-  /* height: calc(100vh - 101px); */
   background: url(../images/main_visual04.png) no-repeat center center/cover;
 }
 
@@ -162,7 +158,6 @@
 .main_visual .main_slide .main_slide_sunflower {
   position: relative;
   height: 75vh;
-  /* height: calc(100vh - 101px); */
   background: url(../images/main_visual05.png) no-repeat center center/cover;
 }
 
@@ -191,6 +186,7 @@
   padding: 10px;
   font-size: 80px;
   color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 
 /* SECTION 01 */
@@ -202,7 +198,6 @@
 .main_special_offers figure {
   margin: 0 15px;
   border: 1px solid #ddd;
-  /* border-radius: 20px 20px 0 0; */
   overflow: hidden;
 }
 
@@ -234,6 +229,7 @@
 }
 
 .main_special_offers figcaption a {
+  position: relative;
   margin: auto 0 0 0;
   border: 1px solid #ddd;
   padding: 10px 25px;
@@ -285,10 +281,6 @@
   overflow: hidden;
 }
 
-.main_golf_course .content > *:hover {
-  flex: 3;
-}
-
 .main_golf_course .content > *::before {
   content: "";
   position: absolute;
@@ -301,62 +293,68 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-.main_golf_course .content .itm01 {
-  background: url(../images/main_course_01.jpg) no-repeat center center/cover;
+.main_golf_course .content > *:hover {
+  flex: 3;
 }
 
-.main_golf_course .content .itm02 {
-  background: url(../images/main_course_02.jpg) no-repeat center center/cover;
-}
-
-.main_golf_course .content .itm03 {
-  background: url(../images/main_course_03.jpg) no-repeat center center/cover;
-}
-
-.main_golf_course .txt {
+.main_golf_course .content .txt {
+  position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* 박스 맨 끝에 더보기 버튼 */
+  height: 100%;
+
   color: #fff;
 }
 
-.main_golf_course .txt .left strong {
-  font-size: 40px;
+.main_golf_course .content > * .txt h3 {
+  font-size: 20px;
   font-weight: 500;
-}
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
 
-.main_golf_course .txt .right {
-  width: 150px;
-}
-
-.main_golf_course .txt .right strong {
-  display: block;
-}
-
-/* .main_golf_course .content > * .txt strong {
   opacity: 0;
 }
 
-.main_golf_course .content > *:hover .txt strong {
+.main_golf_course .content > *:hover .txt h3 {
   opacity: 1;
 }
 
-.main_golf_course .content > * .txt span {
+.main_golf_course .content > * .txt p {
+  width: 400px;
   opacity: 0;
 }
 
-.main_golf_course .content > *:hover .txt span {
+.main_golf_course .content > *:hover .txt p {
   opacity: 1;
-} */
-* {
-  outline: 1px solid --tomato;
 }
-.main_golf_course .content .txt a {
-  display: block;
+
+/* 박스 맨 끝에 더보기 버튼 */
+.main_golf_course .content > * .txt a {
   margin: auto 0 0 0;
-  background: #444;
+  border: 1px solid #fff;
   padding: 10px 25px;
   /* 스트레치 없애기 */
   align-self: flex-start;
+  font-size: 12px;
+
+  opacity: 0;
+}
+
+.main_golf_course .content > *:hover .txt a {
+  opacity: 1;
+}
+
+.main_golf_course .content .itm_hb {
+  background: url(../images/main_course_01.jpg) no-repeat center center/cover;
+}
+
+.main_golf_course .content .itm_tb {
+  background: url(../images/main_course_02.jpg) no-repeat center center/cover;
+}
+
+.main_golf_course .content .itm_bd {
+  background: url(../images/main_course_03.jpg) no-repeat center center/cover;
 }
 
 /* footer */
