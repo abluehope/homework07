@@ -312,6 +312,7 @@
 }
 
 .main_golf_course .content > * .txt h3 {
+  position: relative;
   font-size: 20px;
   font-weight: 500;
   margin: 0 0 20px 0;
@@ -322,6 +323,16 @@
 
 .main_golf_course .content > *:hover .txt h3 {
   opacity: 1;
+}
+
+.main_golf_course .content > *:hover .txt h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65px;
+  height: 2px;
+  background: #fff;
 }
 
 .main_golf_course .content > * .txt p {
