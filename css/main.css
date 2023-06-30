@@ -265,6 +265,9 @@
 }
 
 /* SECTION 02 */
+.main_golf_course {
+  background: #f9f9f9;
+}
 
 .main_golf_course .content {
   display: flex;
